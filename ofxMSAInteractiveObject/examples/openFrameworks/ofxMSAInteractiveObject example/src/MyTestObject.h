@@ -63,9 +63,9 @@ public:
 	
 	
 	void draw() {
-		if(isMouseDown()) ofSetColor(DOWN_COLOR);
-		else if(isMouseOver()) ofSetColor(OVER_COLOR);
-		else ofSetColor(IDLE_COLOR);
+		if(isMouseDown()) ofSetHexColor(DOWN_COLOR);
+		else if(isMouseOver()) ofSetHexColor(OVER_COLOR);
+		else ofSetHexColor(IDLE_COLOR);
 		
 		ofRect(x, y, width, height);
 	}
